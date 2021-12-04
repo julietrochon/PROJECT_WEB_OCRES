@@ -12,15 +12,15 @@ const postsRoute = require('./routes/posts');
 app.use('/posts', postsRoute);
 
 app.get('/', (req, res) => {
-    res.send('We are on home');
+  res.send('We are on home');
 });
 
 
 //connect
 mongoose.connect(
-    "mongodb+srv://JulieHadrienProjet:EceWeb@rest.xnzm1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    { useNewUrlParser: true },
-    () => console.log('connected to DB!')
+  "mongodb+srv://JulieHadrienProjet:EceWeb@rest.xnzm1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  { useNewUrlParser: true },
+  () => console.log('connected to DB!')
 );
 
 
