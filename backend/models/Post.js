@@ -1,19 +1,37 @@
 const mongoose = require('mongoose');
 
-
 const PostSchema = mongoose.Schema({
-    title: {
+    nom: {
         type: String,
         required: true
     },
-    description: {
+    bracerie: {
         type: String,
         required: true
     },
-    date: {
-        type: Date,
-        default: Date.now
-
+    consommation: {
+        type: String,
+        required: true
+    },
+    dateCreation: {
+        type: String,
+        required: true
+    },
+    degre: {
+        type: String,
+        required: true
+    },
+    specialisation: {
+        type: String,
+        required: true
+    },
+    consommationFrance: {
+        type: String,
+        required: true
+    },
+    producteurFrance: {
+        type: String,
+        required: true
     }
 });
 
