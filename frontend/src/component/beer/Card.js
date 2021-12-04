@@ -11,12 +11,14 @@ const Card = (props) => {
 
 
         <div className="card">
-            <img className='image' src={beer.image_url} alt="picture" />
             <div className="info">
                 <ul>
-                    <li className="element">{beer.name}</li>
-                    <li className="element">{beer.abv}</li>
-                    <li className="element">{beer.first_brewed}</li>
+                    <li className="element">{beer.nom}</li>
+                    <li className="element">{beer.bracerie}</li>
+                    <li className="element">{beer.consommation}</li>
+                    <li className="element">{beer.dateCreation}</li>
+                    <li className="element">{beer.degre}</li>
+                    <li className="element">{beer.specialisation}</li>
                 </ul>
             </div>
         </div>

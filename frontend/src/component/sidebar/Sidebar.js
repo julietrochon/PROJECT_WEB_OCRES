@@ -34,6 +34,13 @@ export default function Sidebar() {
                             </li>
                         </Link>
 
+                        <Link to="/chart" className="link">
+                            <li className="sidebarListItem">
+                                <LineStyle className="sidebarIcon" />
+                                chart
+                            </li>
+                        </Link>
+
 
                     </ul>
                 </div>

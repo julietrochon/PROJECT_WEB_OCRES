@@ -1,4 +1,5 @@
 import "./myapi.css";
+import Card from "../beer/Card";
 //import ".../backend/routes/posts.js";
 
 import React, { useState, useEffect } from "react";
@@ -20,11 +21,11 @@ const Myapi = () => {
 
     return (
         <div className="beer">
-            <h1>salut</h1>
+            <h1>salut toi </h1>
             <ul className="beer-list">
                 {data.map((beer) => (
 
-                    <li>{beer.title}</li>
+                    <Card beer={beer} key={beer.name} />
                 ))}
 
             </ul>
