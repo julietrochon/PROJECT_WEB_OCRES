@@ -1,0 +1,9 @@
+.beer{
+    flex: 6;
+    padding: 10px;
+}
+
+.beer-list{
+    display:flex;
+    flex-wrap:wrap;
+}

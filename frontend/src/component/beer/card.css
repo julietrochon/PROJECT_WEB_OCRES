@@ -1,0 +1,32 @@
+.card {
+    height: 250px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(40, 40, 45);
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.image{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 24px;
+    text-align: center;
+}
+
+.info{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.element{
+    list-style-type: none;
+    font-size: 1.2em ;
+    margin: 20px;
+}
+
+
