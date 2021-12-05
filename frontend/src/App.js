@@ -6,10 +6,7 @@ import Sidebar from "./component/sidebar/Sidebar";
 import Navbar from "./component/navbar/Navbar";
 
 import Home from "./pages/home/Home";
-import Home2 from "./pages/home/Home2";
-
 import Beer from "./component/myapi/Myapi";
-import Chart from "./pages/home/Chart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -25,19 +22,9 @@ function App() {
             <Home />
           </Route>
 
-          <Route path="/home2">
-            <Home2 />
-          </Route>
-
           <Route path="/beer">
             <Beer />
           </Route>
-
-          <Route path="/chart">
-            <Chart />
-          </Route>
-
-
 
         </Switch>
       </div>

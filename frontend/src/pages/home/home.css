@@ -21,7 +21,7 @@
   .productTopRight {
     padding: 20px;
     margin: 20px;
-    height: 200px;
+    height: 400px;
     background-color:rgb(40, 40, 45);
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
@@ -36,13 +36,74 @@
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   }
   
-  
+  .grand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   
   .productBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
-    height: 200px;
+    height: 450px;
+    width: 1000px;
     background-color: rgb(40, 40, 45);
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .widget {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .productLeft,
+  .productRight {
+    flex: 1;
+  }
+
+  .productTopLeft2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    background-color: rgb(40, 40, 45);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .productBottomLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    background-color: rgb(40, 40, 45);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .productRight {
+    padding: 20px;
+    margin: 20px;
+    height: 860px;
+    background-color: rgb(40, 40, 45);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  .ajustement{
+    height: 380px;
+    width: 380px;
+  }
+
+  .ajust{
+    width: 800px;
   }

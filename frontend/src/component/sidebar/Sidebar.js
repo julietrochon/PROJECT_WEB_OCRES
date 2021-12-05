@@ -20,27 +20,12 @@ export default function Sidebar() {
                             </li>
                         </Link>
 
-                        <Link to="/home2" className="link">
-                            <li className="sidebarListItem">
-                                <Timeline className="sidebarIcon" />
-                                Home 2
-                            </li>
-                        </Link>
-
                         <Link to="/beer" className="link">
                             <li className="sidebarListItem">
                                 <LineStyle className="sidebarIcon" />
                                 Beer - API
                             </li>
                         </Link>
-
-                        <Link to="/chart" className="link">
-                            <li className="sidebarListItem">
-                                <LineStyle className="sidebarIcon" />
-                                chart
-                            </li>
-                        </Link>
-
 
                     </ul>
                 </div>
