@@ -1,42 +1,94 @@
-import React from 'react';
 import "./chart.css";
-import { Bar, Line, Doughnut, Pie } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
-const data = {
-    labels: ["Red", "Blue", "Green", "Violet", "Orange", "Yellow"],
-    datasets: [
-        {
-            width: "400px",
-            height: "200px",
-            label: "Couleurs préférés en France",
-            data: ["23", "20", "15", "32", "18", "9"],
-            backgroundColor: ["Red", "Blue", "Green", "Violet", "Orange", "Yellow"],
-        }
-    ]
-}
-
-/* const options = {
-    maintainAspectRation: false,
-} */
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Chart = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        axios
+            .get(
+                "http://localhost:3000/posts"
+            )
+            .then((res) => {
+                setData(res.data);
+            });
+    }, []);
 
+    const numberFormat = (x) => {
+        return parseInt(x);
+    }
+
+    var tab = [];
+
+    const tabl = () => {
+        data.map((beer) => (
+            tab.push(numberFormat(beer.consommation))
+        ))
+
+    }
+
+    var tabBiere = [];
+
+    const tabiere = () => {
+        data.map((beer) => (
+            tabBiere.push(beer.nom)
+        ))
+
+    }
+
+    const truc = () => {
+        for (let i = 0; i < tab.length; i++) {
+            datas.datasets[0].data[i] = tab[i];
+        }
+    }
+
+    const truc2 = () => {
+        for (let i = 0; i < tabBiere.length; i++) {
+            datas.labels[i] = tabBiere[i];
+        }
+    }
+
+
+    const datas = {
+
+        labels: [],
+        datasets: [
+            {
+                width: "400px",
+                height: "200px",
+                label: "Couleurs préférés en France",
+                data: [],
+                backgroundColor: ["Red", "Blue", "Green", "Violet", "Orange", "Yellow", "pink"],
+            }
+        ]
+
+
+    }
     return (
-        <div className="beer">
-            <h1>salut</h1>
+        <div className="chart">
+            <h1>chart</h1>
+            <div>
+                <div>
+                    {tabl()}
+                    {tabiere()}
+                    {truc()}
+                    {truc2()}
+                </div>
+
+                <ul>
+                    <li>{tab[0]}</li>
+                </ul>
+            </div>
+
             <div className="container">
                 <div className="card">
-                    <Bar data={data} />
+                    <Bar data={datas} />
                 </div>
-                <div className="card">
-                    <Line data={data} />
-                </div>
-                <div className="card">
-                    <Doughnut data={data} />
-                </div>
-                <div className="card">
-                    <Pie data={data} />
-                </div>
+
+
+
 
 
             </div>
